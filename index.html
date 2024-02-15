@@ -51,13 +51,24 @@
             transform: translateX(-100%);
             background-color: #4a4a4a;
         }
-        input:active::after{
+        label:active::after{
             width: 260px;
+        }
+        main{
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        input:checked .body{
+            background-color: black;
         }
     </style>
 </head>
-<body>
+<body class="body">
     <input type="checkbox" name="" id="darkmode-toggle">
     <label for="darkmode-toggle"></label>
+    <main>
+
+    </main>
 </body>
 </html>
