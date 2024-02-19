@@ -14,20 +14,23 @@
 
         }
 
-        .slider{
+        .slider {
             display: flex;
 
         }
-        .slide{
+
+        .slide {
             flex: 0 0 100%;
             height: 400px;
             background-position: center;
             background-size: cover;
         }
-        .slide.active{
+
+        .slide.active {
             transform: translateX(0);
         }
-        .slider-controls{
+
+        .slider-controls {
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -48,32 +51,32 @@
             <button class="next-slide">Next</button>
         </div>
     </div>
-<script>
-    const slider = document.querySelector(".slider");
-    const slides = document.querySelectorAll(".slide");
-    const prevBtn = document.querySelector(".prev-slide");
-    const nextBtn = document.querySelector(".next-slide");
+    <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".prev-slide");
+        const nextBtn = document.querySelector(".next-slide");
 
-    let slideIndex = 0;
-    slides[slideIndex].classList.add("active");
-
-    prevBtn.addEventListener("click",prev);
-    nextBtn.addEventListener("click",next);
-
-    function prev(){
-
-    }
-
-    function next(){
-        slides[slideIndex].classList.remove("active");
-        slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesin
-        + 1;
+        let slideIndex = 0;
         slides[slideIndex].classList.add("active");
-        slider.style.transform = `translateX(${slideIndex * 100}100%)`
 
-    
-    }
-</script>
+        prevBtn.addEventListener("click", prev);
+        nextBtn.addEventListener("click", next);
+
+        function prev() {
+
+        }
+
+        function next() {
+            slides[slideIndex].classList.remove("active");
+            slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesin
+                + 1;
+            slides[slideIndex].classList.add("active");
+            slider.style.transform = `translateX(${slideIndex * 100}100%)`
+
+
+        }
+    </script>
 </body>
 
 </html>
