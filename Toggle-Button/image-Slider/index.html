@@ -69,10 +69,9 @@
 
         function next() {
             slides[slideIndex].classList.remove("active");
-            slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesin
-                + 1;
+            slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesIndex + 1;
             slides[slideIndex].classList.add("active");
-            slider.style.transform = `translateX(${slideIndex * 100}100%)`
+            slider.style.transform = `translateX(${slideIndex * 100} %)`
 
 
         }
