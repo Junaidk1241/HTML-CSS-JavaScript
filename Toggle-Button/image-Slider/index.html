@@ -28,6 +28,10 @@
             position: absolute;
             bottom: 20px;
             left: 50%;
+            transform: translateX(-50%);
+        }
+        .slide.active{
+
         }
     </style>
 </head>
@@ -35,7 +39,7 @@
 <body>
     <div class="slider-container">
         <div class="slides">
-            <div class="slide" style="background-image: url(image-3.jpg);"></div>
+            <div class="slide active" style="background-image: url(image-3.jpg);"></div>
             <div class="slide" style="background-image: url(image-5.jpg);"></div>
             <div class="slide" style="background-image: url(image-8.jpg);"></div>
         </div>
@@ -44,6 +48,7 @@
             <button class="next-slide">Next</button>
         </div>
     </div>
+
 </body>
 
 </html>
