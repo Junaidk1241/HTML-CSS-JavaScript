@@ -69,7 +69,7 @@
         slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesin
         + 1;
         slides[slideIndex].classList.add("active");
-
+        slider.style.transform = `translateX(${slideIndex * 100}100%)`
 
     
     }
