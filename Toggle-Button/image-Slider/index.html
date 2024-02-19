@@ -66,6 +66,8 @@
 
     function next(){
         slides[slideIndex].classList.remove("active");
+        slideIndex = (slideIndex === slides.length - 1) ? 0 : slidesin
+        + 1;
 
     
     }
