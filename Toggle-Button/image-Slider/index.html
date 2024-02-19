@@ -38,7 +38,7 @@
 
 <body>
     <div class="slider-container">
-        <div class="slides">
+        <div class="slider">
             <div class="slide active" style="background-image: url(image-3.jpg);"></div>
             <div class="slide" style="background-image: url(image-5.jpg);"></div>
             <div class="slide" style="background-image: url(image-8.jpg);"></div>
@@ -48,7 +48,10 @@
             <button class="next-slide">Next</button>
         </div>
     </div>
-
+<script>
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+</script>
 </body>
 
 </html>
