@@ -57,13 +57,14 @@
     <script>
         let img = document.querySelector('img');
         let icon = document.querySelector('#icon');
-    setTimeout(function() {
         img.addEventListener('dblclick', function(){
             icon.style.opacity = 0.8;
             icon.style.transform = "scale(1)";
             icon.style.color = 'red';
+            setTimeout(function() {
+                
+        } , 5000)
         });
-    } , 5000)
     </script>
     
 </body>
