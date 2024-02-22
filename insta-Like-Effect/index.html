@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insta Picture Double Click Like Animation</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <style>
-        *
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -15,16 +15,18 @@
             color: #fff;
 
         }
-        body{
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #111;
             width: 100%;
             height: 100vh;
-            
+
         }
-        #div{
+
+        #div {
             width: 320px;
             height: 400px;
             background-color: #fff;
@@ -35,14 +37,16 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            
+
         }
-        #div img{
+
+        #div img {
             width: 300px;
             height: 200px;
             border-radius: 10px;
         }
-        #div #icon{
+
+        #div #icon {
             position: absolute;
             font-size: 40px;
             top: 25%;
@@ -50,53 +54,63 @@
             opacity: 0;
             transition: all 0.5s ease-in-out;
         }
-        #like{
+
+        #like {
             width: 300px;
             height: 40px;
             border: 1px solid red;
             margin-top: 5px;
-           
+
         }
-        
-        #like-icon{
+
+        #like-icon {
             color: black;
             font-size: 30px;
             margin-right: 6px;
 
         }
-        .saved-btn{
+
+        .saved-btn {
             position: relative;
             left: 47%;
-            
+
         }
-        #caption{
+
+        #caption {
             border: 1px solid blue;
             height: 100px;
             overflow: hidden;
         }
-        #caption span,strong,p{
+
+        #caption span,
+        strong,
+        p {
             color: #111;
             font-size: 13px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
         }
-        strong{
+
+        strong {
             font-weight: 900;
         }
-        #comment{
+
+        #comment {
             height: 50px;
             padding: 5px 0px;
             border: 1px solid green;
             display: flex;
         }
-        #comment img{
+
+        #comment img {
             height: 30px;
             width: 30px;
             object-fit: contain;
-            
-            
+
+
         }
-        #comment input{
+
+        #comment input {
             border: none;
             width: 290px;
             height: 20px;
@@ -105,17 +119,19 @@
         }
     </style>
 </head>
+
 <body>
     <div id="div">
-        <img src="https://plus.unsplash.com/premium_photo-1708371355751-659ef35c65a0?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img src="https://plus.unsplash.com/premium_photo-1708371355751-659ef35c65a0?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
         <i class="ri-heart-fill " id="icon"></i>
-        
+
         <div id="like">
             <i class="ri-heart-fill " id="like-icon"></i>
             <i class="ri-chat-1-line" id="like-icon"></i>
             <i class="ri-send-plane-fill" id="like-icon"></i>
             <i class="ri-bookmark-line saved-btn" id="like-icon"></i>
-            
+
         </div>
         <div id="caption">
             <span>787,199 likes</span>
@@ -130,22 +146,23 @@
     <script>
         let img = document.querySelector('img');
         let icon = document.querySelector('#icon');
-        img.addEventListener('dblclick', function(){
+        img.addEventListener('dblclick', function () {
             icon.style.opacity = 0.8;
             icon.style.transform = "scale(2)";
             icon.style.color = 'red';
-            setTimeout(function() {
-                
+            setTimeout(function () {
+
                 icon.style.transform = "scale(0)";
 
-        } , 3000)
-            setTimeout(function() {
+            }, 3000)
+            setTimeout(function () {
                 icon.style.opacity = 0;
-                
 
-        } , 2000)
+
+            }, 2000)
         });
     </script>
-    
+
 </body>
+
 </html>
