@@ -127,7 +127,7 @@
         <i class="ri-heart-fill " id="icon"></i>
 
         <div id="like">
-            <i class="ri-heart-fill " id="like-icon"></i>
+            <i class="ri-heart-fill  heart " id="like-icon"></i>
             <i class="ri-chat-1-line" id="like-icon"></i>
             <i class="ri-send-plane-fill" id="like-icon"></i>
             <i class="ri-bookmark-line saved-btn" id="like-icon"></i>
@@ -147,6 +147,7 @@
         let img = document.querySelector('img');
         let icon = document.querySelector('#icon');
         let span = document.querySelector('span');
+        let heart = document.querySelector('.heart');
 
         img.addEventListener('dblclick', function () {
             icon.style.opacity = 0.8;
@@ -166,6 +167,11 @@
 
         img.addEventListener("dblclick", function(){
             span.innerHTML = "787,200 likes"
+            setTimeout(function(){
+                heart.style.color = "red";
+            }, 300);
+
+
         });
     </script>
 
