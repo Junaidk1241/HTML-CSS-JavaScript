@@ -85,7 +85,14 @@
     <script>
         let btn = document.querySelector('#btn');
         let caption = document.querySelector('h3');
-        
+
+        btn.addEventListener('click', function(){
+            caption.innerHTML = "Friend";
+            caption.style.color = "Green";
+            btn.innerHTML = "Remove Friend";
+            if(btn === "Remove Friend") 
+        });
+
     </script>
 </body>
 </html>
