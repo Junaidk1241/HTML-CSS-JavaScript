@@ -24,6 +24,7 @@ heart.addEventListener("click", function () {
     heart.style.color = "red";
 
 });
+
 img.addEventListener("dblclick", function () {
     span.innerHTML = "787,200 likes"
     setTimeout(function () {
