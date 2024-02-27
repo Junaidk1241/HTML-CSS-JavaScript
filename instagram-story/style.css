@@ -53,9 +53,7 @@ body {
     object-position: center;
 }
 
-#story-frame::-webkit-scrollbar {
-    /* display: none; */
-}
+
 
 #full-screen {
     height: 100%;
