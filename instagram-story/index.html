@@ -82,14 +82,19 @@
 
             { dp: "https://images.unsplash.com/photo-1708980047130-9c1efcf829bb?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2NHx8fGVufDB8fHx8fA%3D%3D", story: "hhttps://images.unsplash.com/photo-1708905067124-922463e8a74e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" },
         ]
+         let storyFrame = document.querySelector('#story-frame');
         var clutter = "";
         arr.forEach(function (elem, idx) {
             clutter += ` <div id="story" >
-                <img src=" ${elem.dp}" alt="">
-            </div>`
-        });
-
-        document.querySelector('#story-frame').innerHTML += clutter;
+                <img id="${idx}" src=" ${elem.dp}" alt="">
+                </div>`
+            });
+            
+            
+        storyFrame.innerHTML += clutter;
+        storyFrame.addEventListener('click', function(dets){
+            console.log(dets.target.id); 
+        })
     </script>
 </body>
 
