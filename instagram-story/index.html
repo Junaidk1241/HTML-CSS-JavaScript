@@ -109,10 +109,12 @@
             clutter += ` <div id="story" >
                 <img id="${idx}" src=" ${elem.dp}" alt="">
                 </div>`
-                
+
         });
 
         let fullScreen = document.querySelector('#full-screen');
+
+        
         storyFrame.innerHTML += clutter;
         storyFrame.addEventListener('click', function (dets) {
             fullScreen.style.display = 'block';
