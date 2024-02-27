@@ -114,8 +114,10 @@
 
         let fullScreen = document.querySelector('#full-screen');
 
-        
+
         storyFrame.innerHTML += clutter;
+
+        
         storyFrame.addEventListener('click', function (dets) {
             fullScreen.style.display = 'block';
             fullScreen.style.backgroundImage = `url(${arr[dets.target.id].story})`;
