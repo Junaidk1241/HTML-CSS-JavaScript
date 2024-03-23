@@ -18,6 +18,7 @@
             <img src="google-removebg-preview.png" alt="" width="120px">
 
         </div>
+        
         <h2>Change password</h2>
         <div id="gmail"> <i class="fa-regular fa-user"></i>  musaakhann031@gmail.com 
         <i class="fa-solid fa-caret-down"></i>
