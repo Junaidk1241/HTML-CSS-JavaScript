@@ -30,8 +30,8 @@
 
             </div>
             <div>
-                <input type="password" id="new-pass" name="new-pass" required placeholder="New Password"><br><i
-                    class="far fa-eye  pass-icon" id="toggleePassword"></i>
+                <input type="password" id="new-pass" name="new-pass" required placeholder="New Password">
+                <br><i class="far fa-eye  pass-icon" id="toggleePassword"></i>
 
             </div>
 
@@ -40,7 +40,6 @@
         </form>
     </div>
     <script src="script.js"></script>
-
 
 
 </body>
