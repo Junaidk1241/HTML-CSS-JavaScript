@@ -40,9 +40,7 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-    <script>
-       
-    </script>
+    <script src="script.js"></script>
 
 
 
