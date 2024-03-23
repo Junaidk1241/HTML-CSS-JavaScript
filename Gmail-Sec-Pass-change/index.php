@@ -34,8 +34,6 @@
                 <br><i class="far fa-eye  pass-icon" id="toggleePassword"></i>
 
             </div>
-
-
             <input type="submit" value="Submit">
         </form>
     </div>
