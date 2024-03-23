@@ -20,8 +20,9 @@
         </div>
         <h2>Change password</h2>
         <div id="gmail"><i class="fa-regular fa-user"></i> musaakhann031@gmail.com <i
-                class="fa-solid fa-caret-down"></i></div>
-                
+                class="fa-solid fa-caret-down"></i>
+            </div>
+
         <form action="password-store.php" method="post">
 
             <label for="password"><strong>Create a strong password</strong></label><br>
