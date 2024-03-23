@@ -84,50 +84,61 @@ input:focus-visible {
     border: 1px solid rgb(87, 143, 216);
     transition: all 0.3s ease-in-out;
 }
+
 @media only screen and (max-width: 320px) {
-    .form-container{
+    .form-container {
         width: 300px;
         /* border: 1px solid green; */
         transition: all 0.3s ease-in-out;
     }
-    #gmail{
+
+    #gmail {
         margin-left: 40px;
-    padding: 2px 20px;
-    font-size:12px ;
-    margin-bottom: 4px;transition: all 0.3s ease-in-out;
+        padding: 2px 20px;
+        font-size: 12px;
+        margin-bottom: 4px;
+        transition: all 0.3s ease-in-out;
     }
-    input{
+
+    input {
         width: 200px;
         transition: all 0.3s ease-in-out;
     }
-    form{
+
+    form {
         height: 285px;
     }
 }
+
 @media only screen and (max-width: 302px) {
-    .form-container{
+    .form-container {
         height: 453px;
         /* border: 1px solid green; */
         transition: all 0.3s ease-in-out;
     }
-    #gmail{
+
+    #gmail {
         margin-left: 20px;
-    padding: 2px 20px;
-    font-size:12px ;
-    margin-bottom: 4px;transition: all 0.3s ease-in-out;
+        padding: 2px 20px;
+        font-size: 12px;
+        margin-bottom: 4px;
+        transition: all 0.3s ease-in-out;
     }
-    input{
+
+    input {
         width: 200px;
         transition: all 0.3s ease-in-out;
     }
-    form{
+
+    form {
         height: 285px;
     }
 }
-@media only screen and (min-width:421px){
+
+@media only screen and (min-width:421px) {
     .pass-icon {
-    position: relative;
-    left: 75%;
-    top: -40px;
-}
+        position: relative;
+        left: 75%;
+        top: -40px;
+    }
 }
