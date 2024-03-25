@@ -13,6 +13,7 @@ togglePassword.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye-slash');
 });
 
+
 toggleePassword.addEventListener('click', function (e) {
     // toggle the type attribute
     const type = Newpassword.getAttribute('type') === 'password' ? 'text' : 'password';
