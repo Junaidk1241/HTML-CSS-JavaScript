@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="style.css">
         <!-- javascript -->
         <script src="script.js"></script>
-    
+
             <title>Gmail Password Change For Security Purpose</title>
   
 </head>
