@@ -24,7 +24,7 @@
 
         <div id="gmail"> <i class="fa-regular fa-user"></i>  musaakhann031@gmail.com 
         <i class="fa-solid fa-caret-down"></i>
-            </div>
+        </div>
 
         <form action="password-store.php" method="post">
 
