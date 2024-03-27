@@ -18,7 +18,6 @@
     <div class="form-container">
         <div id="google">
             <img src="google-removebg-preview.png" alt="" width="120px">
-
         </div>
 
         <h2>Change password</h2>
